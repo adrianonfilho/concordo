@@ -1,0 +1,117 @@
+\hypertarget{classCanal}{}\doxysection{Referência da Classe Canal}
+\label{classCanal}\index{Canal@{Canal}}
+
+
+Implementação da classe \mbox{\hyperlink{classCanal}{Canal}}.  
+
+
+
+
+{\ttfamily \#include \char`\"{}include/\+Canal.\+h\char`\"{}}
+
+
+
+Diagrama de hierarquia para Canal\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{classCanal__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Membros Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCanal_a1d594c155598889751e87bde39a7404e}{Canal}} (string \mbox{\hyperlink{classCanal_afd954cccffc652f0e59007c805a5467c}{nome}})
+\begin{DoxyCompactList}\small\item\em Construtor. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classCanal_a04ed845ff5fea38f4e5e5e63ab3858e3}{get\+Nome}} ()
+\begin{DoxyCompactList}\small\item\em Faz o get do nome do canal. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCanal_a0ebd41538e722d962c1fd4eca907e0bd}{set\+Nome}} (string \mbox{\hyperlink{classCanal_afd954cccffc652f0e59007c805a5467c}{nome}})
+\begin{DoxyCompactList}\small\item\em Faz o set do nome do canal. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classCanal_aac1b6372ea4bbc5b735043f7ad68db0d}{enviar\+Mensagem}} (\mbox{\hyperlink{classMensagem}{Mensagem}} mensagem)=0
+\begin{DoxyCompactList}\small\item\em Envia mensagem. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCanal_ae09df693717881ef708d9ce92a30c17a}\label{classCanal_ae09df693717881ef708d9ce92a30c17a}} 
+virtual void {\bfseries listar\+Mensagens} (vector$<$ shared\+\_\+ptr$<$ \mbox{\hyperlink{classUsuario}{Usuario}} $>$$>$ usuarios\+Cadastrados)=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributos Privados}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCanal_afd954cccffc652f0e59007c805a5467c}\label{classCanal_afd954cccffc652f0e59007c805a5467c}} 
+string \mbox{\hyperlink{classCanal_afd954cccffc652f0e59007c805a5467c}{nome}}
+\begin{DoxyCompactList}\small\item\em String para nome do canal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Implementação da classe \mbox{\hyperlink{classCanal}{Canal}}. 
+
+\doxysubsection{Construtores e Destrutores}
+\mbox{\Hypertarget{classCanal_a1d594c155598889751e87bde39a7404e}\label{classCanal_a1d594c155598889751e87bde39a7404e}} 
+\index{Canal@{Canal}!Canal@{Canal}}
+\index{Canal@{Canal}!Canal@{Canal}}
+\doxysubsubsection{\texorpdfstring{Canal()}{Canal()}}
+{\footnotesize\ttfamily Canal\+::\+Canal (\begin{DoxyParamCaption}\item[{string}]{nome }\end{DoxyParamCaption})}
+
+
+
+Construtor. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em nome} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Funções membros}
+\mbox{\Hypertarget{classCanal_aac1b6372ea4bbc5b735043f7ad68db0d}\label{classCanal_aac1b6372ea4bbc5b735043f7ad68db0d}} 
+\index{Canal@{Canal}!enviarMensagem@{enviarMensagem}}
+\index{enviarMensagem@{enviarMensagem}!Canal@{Canal}}
+\doxysubsubsection{\texorpdfstring{enviarMensagem()}{enviarMensagem()}}
+{\footnotesize\ttfamily virtual void Canal\+::enviar\+Mensagem (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMensagem}{Mensagem}}}]{mensagem }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Envia mensagem. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em mensagem} & \\
+\hline
+\end{DoxyParams}
+
+
+Implementado por \mbox{\hyperlink{classCanalVoz_a1f88ed76076c81c2098529a6ffe8d3ce}{Canal\+Voz}} e \mbox{\hyperlink{classCanalTexto_a0b6a6c4048b3b7301c638baab6581e2c}{Canal\+Texto}}.
+
+\mbox{\Hypertarget{classCanal_a04ed845ff5fea38f4e5e5e63ab3858e3}\label{classCanal_a04ed845ff5fea38f4e5e5e63ab3858e3}} 
+\index{Canal@{Canal}!getNome@{getNome}}
+\index{getNome@{getNome}!Canal@{Canal}}
+\doxysubsubsection{\texorpdfstring{getNome()}{getNome()}}
+{\footnotesize\ttfamily string Canal\+::get\+Nome (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Faz o get do nome do canal. 
+
+\begin{DoxyReturn}{Retorna}
+Nome do canal 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCanal_a0ebd41538e722d962c1fd4eca907e0bd}\label{classCanal_a0ebd41538e722d962c1fd4eca907e0bd}} 
+\index{Canal@{Canal}!setNome@{setNome}}
+\index{setNome@{setNome}!Canal@{Canal}}
+\doxysubsubsection{\texorpdfstring{setNome()}{setNome()}}
+{\footnotesize\ttfamily void Canal\+::set\+Nome (\begin{DoxyParamCaption}\item[{string}]{nome }\end{DoxyParamCaption})}
+
+
+
+Faz o set do nome do canal. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em nome} & String para nome do canal \\
+\hline
+\end{DoxyParams}
+
+
+A documentação para essa classe foi gerada a partir dos seguintes arquivos\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{Canal_8h}{Canal.\+h}}\item 
+src/Canal.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,91 @@
+\hypertarget{classCanalTexto}{}\doxysection{Referência da Classe Canal\+Texto}
+\label{classCanalTexto}\index{CanalTexto@{CanalTexto}}
+
+
+Implementação da classe \mbox{\hyperlink{classCanalTexto}{Canal\+Texto}} (herdando de \mbox{\hyperlink{classCanal}{Canal}})  
+
+
+
+
+{\ttfamily \#include \char`\"{}include/\+Canal\+Texto.\+h\char`\"{}}
+
+
+
+Diagrama de hierarquia para Canal\+Texto\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{classCanalTexto__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagrama de colaboração para Canal\+Texto\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{classCanalTexto__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Membros Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCanalTexto_a552bec4059eb4e28b8e18413521acc8b}{Canal\+Texto}} (string \mbox{\hyperlink{classCanal_afd954cccffc652f0e59007c805a5467c}{nome}})
+\begin{DoxyCompactList}\small\item\em Construtor. \end{DoxyCompactList}\item 
+vector$<$ shared\+\_\+ptr$<$ \mbox{\hyperlink{classMensagem}{Mensagem}} $>$ $>$ \mbox{\hyperlink{classCanalTexto_a680963d97559f81fc653b10a8b404003}{get\+Mensagens}} ()
+\begin{DoxyCompactList}\small\item\em Faz o get de mensagens. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCanalTexto_a0b6a6c4048b3b7301c638baab6581e2c}\label{classCanalTexto_a0b6a6c4048b3b7301c638baab6581e2c}} 
+void \mbox{\hyperlink{classCanalTexto_a0b6a6c4048b3b7301c638baab6581e2c}{enviar\+Mensagem}} (\mbox{\hyperlink{classMensagem}{Mensagem}} mensagem)
+\begin{DoxyCompactList}\small\item\em Envia mensagem. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCanalTexto_a079890755c22bfc81fb28125e4d81f33}\label{classCanalTexto_a079890755c22bfc81fb28125e4d81f33}} 
+void {\bfseries listar\+Mensagens} (vector$<$ shared\+\_\+ptr$<$ \mbox{\hyperlink{classUsuario}{Usuario}} $>$$>$ usuarios\+Cadastrados)
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributos Privados}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCanalTexto_abe06c1d968424bf9bc5423709f8b818a}\label{classCanalTexto_abe06c1d968424bf9bc5423709f8b818a}} 
+vector$<$ shared\+\_\+ptr$<$ \mbox{\hyperlink{classMensagem}{Mensagem}} $>$ $>$ \mbox{\hyperlink{classCanalTexto_abe06c1d968424bf9bc5423709f8b818a}{mensagens}}
+\begin{DoxyCompactList}\small\item\em Vector de mensagens. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Implementação da classe \mbox{\hyperlink{classCanalTexto}{Canal\+Texto}} (herdando de \mbox{\hyperlink{classCanal}{Canal}}) 
+
+\doxysubsection{Construtores e Destrutores}
+\mbox{\Hypertarget{classCanalTexto_a552bec4059eb4e28b8e18413521acc8b}\label{classCanalTexto_a552bec4059eb4e28b8e18413521acc8b}} 
+\index{CanalTexto@{CanalTexto}!CanalTexto@{CanalTexto}}
+\index{CanalTexto@{CanalTexto}!CanalTexto@{CanalTexto}}
+\doxysubsubsection{\texorpdfstring{CanalTexto()}{CanalTexto()}}
+{\footnotesize\ttfamily Canal\+Texto\+::\+Canal\+Texto (\begin{DoxyParamCaption}\item[{string}]{nome }\end{DoxyParamCaption})}
+
+
+
+Construtor. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em nome} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Funções membros}
+\mbox{\Hypertarget{classCanalTexto_a680963d97559f81fc653b10a8b404003}\label{classCanalTexto_a680963d97559f81fc653b10a8b404003}} 
+\index{CanalTexto@{CanalTexto}!getMensagens@{getMensagens}}
+\index{getMensagens@{getMensagens}!CanalTexto@{CanalTexto}}
+\doxysubsubsection{\texorpdfstring{getMensagens()}{getMensagens()}}
+{\footnotesize\ttfamily vector$<$ shared\+\_\+ptr$<$ \mbox{\hyperlink{classMensagem}{Mensagem}} $>$ $>$ Canal\+Texto\+::get\+Mensagens (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Faz o get de mensagens. 
+
+\begin{DoxyReturn}{Retorna}
+Mensagens 
+\end{DoxyReturn}
+
+
+A documentação para essa classe foi gerada a partir dos seguintes arquivos\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{CanalTexto_8h}{Canal\+Texto.\+h}}\item 
+src/Canal\+Texto.\+cpp\end{DoxyCompactItemize}

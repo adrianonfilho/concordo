@@ -1,0 +1,294 @@
+\hypertarget{classServidor}{}\doxysection{Referência da Classe Servidor}
+\label{classServidor}\index{Servidor@{Servidor}}
+
+
+Implementação da classe \mbox{\hyperlink{classServidor}{Servidor}}.  
+
+
+
+
+{\ttfamily \#include \char`\"{}include/\+Servidor.\+h\char`\"{}}
+
+\doxysubsection*{Membros Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classServidor_a83bc1c05bf5625931226d63dd0f362d9}{Servidor}} (int \mbox{\hyperlink{classServidor_a52c21983ad654fb7994dead4ae433e2c}{usuario\+Dono\+Id}}, string \mbox{\hyperlink{classServidor_afe5b8d9c020be2cdea189f3aa5958b2d}{nome}})
+\begin{DoxyCompactList}\small\item\em Construtor. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classServidor_a3b4b66c25d64af99b92d740f047bba78}{get\+Usuario\+Dono\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Faz o get de Usuario\+Dono\+Id. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classServidor_a57fc2536114ebb5edae50a72f8f62d1f}{set\+Usuario\+Dono\+Id}} (int id)
+\begin{DoxyCompactList}\small\item\em Faz o set de Usuario\+Dono\+Id. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classServidor_a4da7c1b32d6c64e82477ecc6914b8590}{get\+Nome}} ()
+\begin{DoxyCompactList}\small\item\em Faz o get de nome. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classServidor_a8f2b29ca671cf3b04a4e890c51555eef}{set\+Nome}} (string \mbox{\hyperlink{classServidor_afe5b8d9c020be2cdea189f3aa5958b2d}{nome}})
+\begin{DoxyCompactList}\small\item\em Faz o set de nome. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classServidor_ad2b0faac139e7536ec330d27751a9831}{get\+Descricao}} ()
+\begin{DoxyCompactList}\small\item\em Faz o get de descricao. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classServidor_afc705d30235d428bf6b488876081f457}{set\+Descricao}} (string \mbox{\hyperlink{classServidor_ac835192fb099563bd7248b2594be796d}{descricao}})
+\begin{DoxyCompactList}\small\item\em Faz o set de descricao. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classServidor_a96cd8c94defdd3f8e9c1182668c7fe5a}{get\+Codigo\+Convite}} ()
+\begin{DoxyCompactList}\small\item\em Faz o get de codigo\+Convite. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classServidor_a4a7975c8079c3e8f62cc1b049bb3d4d9}{set\+Codigo\+Convite}} (string \mbox{\hyperlink{classServidor_a5c219913b2b69704055535477cb5bb9a}{codigo\+Convite}})
+\begin{DoxyCompactList}\small\item\em Faz o set de codigo\+Convite. \end{DoxyCompactList}\item 
+vector$<$ shared\+\_\+ptr$<$ \mbox{\hyperlink{classCanalTexto}{Canal\+Texto}} $>$ $>$ \mbox{\hyperlink{classServidor_afad926092a81e75a6db1b07a752ba430}{get\+Canais\+Texto}} ()
+\begin{DoxyCompactList}\small\item\em Faz o get de canais de texto. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classServidor_a52e22cbc676fc0f9a711b48897d1b499}{adicionar\+Canal\+Texto}} (shared\+\_\+ptr$<$ \mbox{\hyperlink{classCanalTexto}{Canal\+Texto}} $>$ canal\+Texto)
+\begin{DoxyCompactList}\small\item\em Adiciona um canal de texto. \end{DoxyCompactList}\item 
+vector$<$ shared\+\_\+ptr$<$ \mbox{\hyperlink{classCanalVoz}{Canal\+Voz}} $>$ $>$ \mbox{\hyperlink{classServidor_a9a61ebdcd7d9c9f8c4fe0d1807bcb91f}{get\+Canais\+Voz}} ()
+\begin{DoxyCompactList}\small\item\em Faz o get de canais de voz. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classServidor_a1581b582cc503a95bfcde43c78bc44da}{adicionar\+Canal\+Voz}} (shared\+\_\+ptr$<$ \mbox{\hyperlink{classCanalVoz}{Canal\+Voz}} $>$ canal\+Voz)
+\begin{DoxyCompactList}\small\item\em Adiciona um canal de voz. \end{DoxyCompactList}\item 
+vector$<$ int $>$ \mbox{\hyperlink{classServidor_a332f60c7a86d6912d2abce8c75c152d4}{get\+Participantes\+Ids}} ()
+\begin{DoxyCompactList}\small\item\em Faz o get do id dos participantes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classServidor_a17301b09a75bc126d413a5cf05541b35}{adicionar\+Participante\+Id}} (int id)
+\begin{DoxyCompactList}\small\item\em Adiciona um participante. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos Privados}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classServidor_a52c21983ad654fb7994dead4ae433e2c}\label{classServidor_a52c21983ad654fb7994dead4ae433e2c}} 
+int \mbox{\hyperlink{classServidor_a52c21983ad654fb7994dead4ae433e2c}{usuario\+Dono\+Id}}
+\begin{DoxyCompactList}\small\item\em int para id do usuário dono do servidor \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classServidor_afe5b8d9c020be2cdea189f3aa5958b2d}\label{classServidor_afe5b8d9c020be2cdea189f3aa5958b2d}} 
+string \mbox{\hyperlink{classServidor_afe5b8d9c020be2cdea189f3aa5958b2d}{nome}}
+\begin{DoxyCompactList}\small\item\em string nome para nomear servidor \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classServidor_ac835192fb099563bd7248b2594be796d}\label{classServidor_ac835192fb099563bd7248b2594be796d}} 
+string \mbox{\hyperlink{classServidor_ac835192fb099563bd7248b2594be796d}{descricao}}
+\begin{DoxyCompactList}\small\item\em string descricao para descrever servidor \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classServidor_a5c219913b2b69704055535477cb5bb9a}\label{classServidor_a5c219913b2b69704055535477cb5bb9a}} 
+string \mbox{\hyperlink{classServidor_a5c219913b2b69704055535477cb5bb9a}{codigo\+Convite}}
+\begin{DoxyCompactList}\small\item\em string com código de convite para server \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classServidor_a934082d3bbb827d8294a06ba5d87c30b}\label{classServidor_a934082d3bbb827d8294a06ba5d87c30b}} 
+vector$<$ shared\+\_\+ptr$<$ \mbox{\hyperlink{classCanalTexto}{Canal\+Texto}} $>$ $>$ \mbox{\hyperlink{classServidor_a934082d3bbb827d8294a06ba5d87c30b}{canais\+Texto}}
+\begin{DoxyCompactList}\small\item\em vector de canais com os canais do de texto do servidor \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classServidor_ace925601f19875d3c040537d651a3318}\label{classServidor_ace925601f19875d3c040537d651a3318}} 
+vector$<$ shared\+\_\+ptr$<$ \mbox{\hyperlink{classCanalVoz}{Canal\+Voz}} $>$ $>$ \mbox{\hyperlink{classServidor_ace925601f19875d3c040537d651a3318}{canais\+Voz}}
+\begin{DoxyCompactList}\small\item\em vector de canais com os canais do de texto do servidor \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classServidor_a94e53c9774bcf7d8dc592c054dd4b338}\label{classServidor_a94e53c9774bcf7d8dc592c054dd4b338}} 
+vector$<$ int $>$ \mbox{\hyperlink{classServidor_a94e53c9774bcf7d8dc592c054dd4b338}{participantes\+Ids}}
+\begin{DoxyCompactList}\small\item\em vector de int com os IDs dos participantes do servidor \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Implementação da classe \mbox{\hyperlink{classServidor}{Servidor}}. 
+
+\doxysubsection{Construtores e Destrutores}
+\mbox{\Hypertarget{classServidor_a83bc1c05bf5625931226d63dd0f362d9}\label{classServidor_a83bc1c05bf5625931226d63dd0f362d9}} 
+\index{Servidor@{Servidor}!Servidor@{Servidor}}
+\index{Servidor@{Servidor}!Servidor@{Servidor}}
+\doxysubsubsection{\texorpdfstring{Servidor()}{Servidor()}}
+{\footnotesize\ttfamily Servidor\+::\+Servidor (\begin{DoxyParamCaption}\item[{int}]{usuario\+Dono\+Id,  }\item[{string}]{nome }\end{DoxyParamCaption})}
+
+
+
+Construtor. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em usuario\+Dono\+Id,nome} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Funções membros}
+\mbox{\Hypertarget{classServidor_a52e22cbc676fc0f9a711b48897d1b499}\label{classServidor_a52e22cbc676fc0f9a711b48897d1b499}} 
+\index{Servidor@{Servidor}!adicionarCanalTexto@{adicionarCanalTexto}}
+\index{adicionarCanalTexto@{adicionarCanalTexto}!Servidor@{Servidor}}
+\doxysubsubsection{\texorpdfstring{adicionarCanalTexto()}{adicionarCanalTexto()}}
+{\footnotesize\ttfamily void Servidor\+::adicionar\+Canal\+Texto (\begin{DoxyParamCaption}\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{classCanalTexto}{Canal\+Texto}} $>$}]{canal\+Texto }\end{DoxyParamCaption})}
+
+
+
+Adiciona um canal de texto. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em canal\+Texto} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classServidor_a1581b582cc503a95bfcde43c78bc44da}\label{classServidor_a1581b582cc503a95bfcde43c78bc44da}} 
+\index{Servidor@{Servidor}!adicionarCanalVoz@{adicionarCanalVoz}}
+\index{adicionarCanalVoz@{adicionarCanalVoz}!Servidor@{Servidor}}
+\doxysubsubsection{\texorpdfstring{adicionarCanalVoz()}{adicionarCanalVoz()}}
+{\footnotesize\ttfamily void Servidor\+::adicionar\+Canal\+Voz (\begin{DoxyParamCaption}\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{classCanalVoz}{Canal\+Voz}} $>$}]{canal\+Voz }\end{DoxyParamCaption})}
+
+
+
+Adiciona um canal de voz. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em canal\+Voz} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classServidor_a17301b09a75bc126d413a5cf05541b35}\label{classServidor_a17301b09a75bc126d413a5cf05541b35}} 
+\index{Servidor@{Servidor}!adicionarParticipanteId@{adicionarParticipanteId}}
+\index{adicionarParticipanteId@{adicionarParticipanteId}!Servidor@{Servidor}}
+\doxysubsubsection{\texorpdfstring{adicionarParticipanteId()}{adicionarParticipanteId()}}
+{\footnotesize\ttfamily void Servidor\+::adicionar\+Participante\+Id (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Adiciona um participante. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classServidor_afad926092a81e75a6db1b07a752ba430}\label{classServidor_afad926092a81e75a6db1b07a752ba430}} 
+\index{Servidor@{Servidor}!getCanaisTexto@{getCanaisTexto}}
+\index{getCanaisTexto@{getCanaisTexto}!Servidor@{Servidor}}
+\doxysubsubsection{\texorpdfstring{getCanaisTexto()}{getCanaisTexto()}}
+{\footnotesize\ttfamily vector$<$ shared\+\_\+ptr$<$ \mbox{\hyperlink{classCanalTexto}{Canal\+Texto}} $>$ $>$ Servidor\+::get\+Canais\+Texto (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Faz o get de canais de texto. 
+
+\begin{DoxyReturn}{Retorna}
+canais de texto 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classServidor_a9a61ebdcd7d9c9f8c4fe0d1807bcb91f}\label{classServidor_a9a61ebdcd7d9c9f8c4fe0d1807bcb91f}} 
+\index{Servidor@{Servidor}!getCanaisVoz@{getCanaisVoz}}
+\index{getCanaisVoz@{getCanaisVoz}!Servidor@{Servidor}}
+\doxysubsubsection{\texorpdfstring{getCanaisVoz()}{getCanaisVoz()}}
+{\footnotesize\ttfamily vector$<$ shared\+\_\+ptr$<$ \mbox{\hyperlink{classCanalVoz}{Canal\+Voz}} $>$ $>$ Servidor\+::get\+Canais\+Voz (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Faz o get de canais de voz. 
+
+\begin{DoxyReturn}{Retorna}
+canais de voz 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classServidor_a96cd8c94defdd3f8e9c1182668c7fe5a}\label{classServidor_a96cd8c94defdd3f8e9c1182668c7fe5a}} 
+\index{Servidor@{Servidor}!getCodigoConvite@{getCodigoConvite}}
+\index{getCodigoConvite@{getCodigoConvite}!Servidor@{Servidor}}
+\doxysubsubsection{\texorpdfstring{getCodigoConvite()}{getCodigoConvite()}}
+{\footnotesize\ttfamily string Servidor\+::get\+Codigo\+Convite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Faz o get de codigo\+Convite. 
+
+\begin{DoxyReturn}{Retorna}
+codigo\+Convite 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classServidor_ad2b0faac139e7536ec330d27751a9831}\label{classServidor_ad2b0faac139e7536ec330d27751a9831}} 
+\index{Servidor@{Servidor}!getDescricao@{getDescricao}}
+\index{getDescricao@{getDescricao}!Servidor@{Servidor}}
+\doxysubsubsection{\texorpdfstring{getDescricao()}{getDescricao()}}
+{\footnotesize\ttfamily string Servidor\+::get\+Descricao (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Faz o get de descricao. 
+
+\begin{DoxyReturn}{Retorna}
+descricao 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classServidor_a4da7c1b32d6c64e82477ecc6914b8590}\label{classServidor_a4da7c1b32d6c64e82477ecc6914b8590}} 
+\index{Servidor@{Servidor}!getNome@{getNome}}
+\index{getNome@{getNome}!Servidor@{Servidor}}
+\doxysubsubsection{\texorpdfstring{getNome()}{getNome()}}
+{\footnotesize\ttfamily string Servidor\+::get\+Nome (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Faz o get de nome. 
+
+\begin{DoxyReturn}{Retorna}
+nome 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classServidor_a332f60c7a86d6912d2abce8c75c152d4}\label{classServidor_a332f60c7a86d6912d2abce8c75c152d4}} 
+\index{Servidor@{Servidor}!getParticipantesIds@{getParticipantesIds}}
+\index{getParticipantesIds@{getParticipantesIds}!Servidor@{Servidor}}
+\doxysubsubsection{\texorpdfstring{getParticipantesIds()}{getParticipantesIds()}}
+{\footnotesize\ttfamily vector$<$ int $>$ Servidor\+::get\+Participantes\+Ids (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Faz o get do id dos participantes. 
+
+\begin{DoxyReturn}{Retorna}
+participantes\+Ids 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classServidor_a3b4b66c25d64af99b92d740f047bba78}\label{classServidor_a3b4b66c25d64af99b92d740f047bba78}} 
+\index{Servidor@{Servidor}!getUsuarioDonoId@{getUsuarioDonoId}}
+\index{getUsuarioDonoId@{getUsuarioDonoId}!Servidor@{Servidor}}
+\doxysubsubsection{\texorpdfstring{getUsuarioDonoId()}{getUsuarioDonoId()}}
+{\footnotesize\ttfamily int Servidor\+::get\+Usuario\+Dono\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Faz o get de Usuario\+Dono\+Id. 
+
+\begin{DoxyReturn}{Retorna}
+Usuario\+Dono\+Id 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classServidor_a4a7975c8079c3e8f62cc1b049bb3d4d9}\label{classServidor_a4a7975c8079c3e8f62cc1b049bb3d4d9}} 
+\index{Servidor@{Servidor}!setCodigoConvite@{setCodigoConvite}}
+\index{setCodigoConvite@{setCodigoConvite}!Servidor@{Servidor}}
+\doxysubsubsection{\texorpdfstring{setCodigoConvite()}{setCodigoConvite()}}
+{\footnotesize\ttfamily void Servidor\+::set\+Codigo\+Convite (\begin{DoxyParamCaption}\item[{string}]{codigo\+Convite }\end{DoxyParamCaption})}
+
+
+
+Faz o set de codigo\+Convite. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em codigo\+Convite} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classServidor_afc705d30235d428bf6b488876081f457}\label{classServidor_afc705d30235d428bf6b488876081f457}} 
+\index{Servidor@{Servidor}!setDescricao@{setDescricao}}
+\index{setDescricao@{setDescricao}!Servidor@{Servidor}}
+\doxysubsubsection{\texorpdfstring{setDescricao()}{setDescricao()}}
+{\footnotesize\ttfamily void Servidor\+::set\+Descricao (\begin{DoxyParamCaption}\item[{string}]{descricao }\end{DoxyParamCaption})}
+
+
+
+Faz o set de descricao. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em descricao} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classServidor_a8f2b29ca671cf3b04a4e890c51555eef}\label{classServidor_a8f2b29ca671cf3b04a4e890c51555eef}} 
+\index{Servidor@{Servidor}!setNome@{setNome}}
+\index{setNome@{setNome}!Servidor@{Servidor}}
+\doxysubsubsection{\texorpdfstring{setNome()}{setNome()}}
+{\footnotesize\ttfamily void Servidor\+::set\+Nome (\begin{DoxyParamCaption}\item[{string}]{nome }\end{DoxyParamCaption})}
+
+
+
+Faz o set de nome. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em nome} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classServidor_a57fc2536114ebb5edae50a72f8f62d1f}\label{classServidor_a57fc2536114ebb5edae50a72f8f62d1f}} 
+\index{Servidor@{Servidor}!setUsuarioDonoId@{setUsuarioDonoId}}
+\index{setUsuarioDonoId@{setUsuarioDonoId}!Servidor@{Servidor}}
+\doxysubsubsection{\texorpdfstring{setUsuarioDonoId()}{setUsuarioDonoId()}}
+{\footnotesize\ttfamily void Servidor\+::set\+Usuario\+Dono\+Id (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Faz o set de Usuario\+Dono\+Id. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+
+
+A documentação para essa classe foi gerada a partir dos seguintes arquivos\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{Servidor_8h}{Servidor.\+h}}\item 
+src/Servidor.\+cpp\end{DoxyCompactItemize}

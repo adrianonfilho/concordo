@@ -1,0 +1,41 @@
+create-user adriano@protonmail.com 12345 Adriano Filho
+create-user joao@gmail.com 1234 Joao Silva
+login adriano@protonmail.com 1234
+login adriano@protonmail.com 12345
+disconnect
+login adriano@protonmail.com 12345
+create-server server-adriano
+set-server-desc server-adriano "Servidor do Adriano"
+set-server-invite-code server-adriano 123
+enter-server server-adriano
+list-channels
+create-channel bate-papo texto
+create-channel geral voz
+list-channels
+enter-channel bate-papo
+send-message "olá"
+list-messages
+send-message "teste"
+list-messages
+leave-channel
+enter-channel geral
+send-message "teste"
+list-messages
+send-message "teste 2"
+list-messages
+disconnect
+login joao@gmail.com 1234
+enter-server server-adriano 123
+list-participants
+enter-channel bate-papo
+list-messages
+send-message "oi"
+list-messages
+send-message "teste"
+list-messages
+leave-channel
+enter-channel geral
+list-messages
+send-message "teste"
+list-messages
+quit

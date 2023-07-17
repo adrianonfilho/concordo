@@ -1,0 +1,110 @@
+\hypertarget{classCanalVoz}{}\doxysection{Referência da Classe Canal\+Voz}
+\label{classCanalVoz}\index{CanalVoz@{CanalVoz}}
+
+
+Implementação da classe \mbox{\hyperlink{classCanalVoz}{Canal\+Voz}} (herdando de \mbox{\hyperlink{classCanal}{Canal}})  
+
+
+
+
+{\ttfamily \#include \char`\"{}include/\+Canal\+Voz.\+h\char`\"{}}
+
+
+
+Diagrama de hierarquia para Canal\+Voz\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=142pt]{classCanalVoz__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagrama de colaboração para Canal\+Voz\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=142pt]{classCanalVoz__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Membros Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCanalVoz_a908b3e2d8e99a8f656404e17b51054dc}{Canal\+Voz}} (string \mbox{\hyperlink{classCanal_afd954cccffc652f0e59007c805a5467c}{nome}})
+\begin{DoxyCompactList}\small\item\em Construtor. \end{DoxyCompactList}\item 
+shared\+\_\+ptr$<$ \mbox{\hyperlink{classMensagem}{Mensagem}} $>$ \mbox{\hyperlink{classCanalVoz_a31732bf07d057f65accd600cc2f6996b}{get\+Ultima\+Mensagem}} ()
+\begin{DoxyCompactList}\small\item\em Faz o get da última mensagem. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCanalVoz_a1f88ed76076c81c2098529a6ffe8d3ce}{enviar\+Mensagem}} (\mbox{\hyperlink{classMensagem}{Mensagem}} mensagem)
+\begin{DoxyCompactList}\small\item\em Envia mensagem. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCanalVoz_a8788d70885fd5feaa275a5408b3bc438}\label{classCanalVoz_a8788d70885fd5feaa275a5408b3bc438}} 
+void {\bfseries listar\+Mensagens} (vector$<$ shared\+\_\+ptr$<$ \mbox{\hyperlink{classUsuario}{Usuario}} $>$$>$ usuarios\+Cadastrados)
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributos Privados}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCanalVoz_a932d8991318eb6bf3d658c1c557d7910}\label{classCanalVoz_a932d8991318eb6bf3d658c1c557d7910}} 
+shared\+\_\+ptr$<$ \mbox{\hyperlink{classMensagem}{Mensagem}} $>$ \mbox{\hyperlink{classCanalVoz_a932d8991318eb6bf3d658c1c557d7910}{ultima\+Mensagem}}
+\begin{DoxyCompactList}\small\item\em Última mensagem. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Implementação da classe \mbox{\hyperlink{classCanalVoz}{Canal\+Voz}} (herdando de \mbox{\hyperlink{classCanal}{Canal}}) 
+
+\doxysubsection{Construtores e Destrutores}
+\mbox{\Hypertarget{classCanalVoz_a908b3e2d8e99a8f656404e17b51054dc}\label{classCanalVoz_a908b3e2d8e99a8f656404e17b51054dc}} 
+\index{CanalVoz@{CanalVoz}!CanalVoz@{CanalVoz}}
+\index{CanalVoz@{CanalVoz}!CanalVoz@{CanalVoz}}
+\doxysubsubsection{\texorpdfstring{CanalVoz()}{CanalVoz()}}
+{\footnotesize\ttfamily Canal\+Voz\+::\+Canal\+Voz (\begin{DoxyParamCaption}\item[{string}]{nome }\end{DoxyParamCaption})}
+
+
+
+Construtor. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em nome} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Funções membros}
+\mbox{\Hypertarget{classCanalVoz_a1f88ed76076c81c2098529a6ffe8d3ce}\label{classCanalVoz_a1f88ed76076c81c2098529a6ffe8d3ce}} 
+\index{CanalVoz@{CanalVoz}!enviarMensagem@{enviarMensagem}}
+\index{enviarMensagem@{enviarMensagem}!CanalVoz@{CanalVoz}}
+\doxysubsubsection{\texorpdfstring{enviarMensagem()}{enviarMensagem()}}
+{\footnotesize\ttfamily void Canal\+Voz\+::enviar\+Mensagem (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMensagem}{Mensagem}}}]{mensagem }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Envia mensagem. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em mensagem} & \\
+\hline
+\end{DoxyParams}
+
+
+Implementa \mbox{\hyperlink{classCanal_aac1b6372ea4bbc5b735043f7ad68db0d}{Canal}}.
+
+\mbox{\Hypertarget{classCanalVoz_a31732bf07d057f65accd600cc2f6996b}\label{classCanalVoz_a31732bf07d057f65accd600cc2f6996b}} 
+\index{CanalVoz@{CanalVoz}!getUltimaMensagem@{getUltimaMensagem}}
+\index{getUltimaMensagem@{getUltimaMensagem}!CanalVoz@{CanalVoz}}
+\doxysubsubsection{\texorpdfstring{getUltimaMensagem()}{getUltimaMensagem()}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$ \mbox{\hyperlink{classMensagem}{Mensagem}} $>$ Canal\+Voz\+::get\+Ultima\+Mensagem (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Faz o get da última mensagem. 
+
+\begin{DoxyReturn}{Retorna}
+ultima\+Mensagem ~\newline
+ 
+\end{DoxyReturn}
+
+
+A documentação para essa classe foi gerada a partir dos seguintes arquivos\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{CanalVoz_8h}{Canal\+Voz.\+h}}\item 
+src/Canal\+Voz.\+cpp\end{DoxyCompactItemize}

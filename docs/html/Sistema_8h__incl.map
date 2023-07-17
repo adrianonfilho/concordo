@@ -1,0 +1,13 @@
+<map id="include/Sistema.h" name="include/Sistema.h">
+<area shape="rect" id="node1" title="Cabeçalho da classe Sistema." alt="" coords="181,5,319,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="366,379,425,405"/>
+<area shape="rect" id="node3" title=" " alt="" coords="113,304,176,331"/>
+<area shape="rect" id="node4" title=" " alt="" coords="589,304,666,331"/>
+<area shape="rect" id="node5" href="$Usuario_8h.html" title="Cabeçalho da classe Usuario." alt="" coords="5,304,89,331"/>
+<area shape="rect" id="node6" href="$Servidor_8h.html" title="Cabeçalho da classe Servidor." alt="" coords="323,80,409,107"/>
+<area shape="rect" id="node8" href="$Canal_8h.html" title="Cabeçalho da classe Canal." alt="" coords="215,229,285,256"/>
+<area shape="rect" id="node7" href="$CanalTexto_8h.html" title="Cabeçalho da classe CanalTexto." alt="" coords="313,155,419,181"/>
+<area shape="rect" id="node11" href="$CanalVoz_8h.html" title="Cabeçalho da classe CanalVoz." alt="" coords="491,155,585,181"/>
+<area shape="rect" id="node9" title=" " alt="" coords="433,304,513,331"/>
+<area shape="rect" id="node10" href="$Mensagem_8h.html" title="Cabeçalho da classe Mensagem." alt="" coords="251,304,358,331"/>
+</map>

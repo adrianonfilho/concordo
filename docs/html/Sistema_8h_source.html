@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Concordo: Código-Fonte de include/Sistema.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Concordo
+   &#160;<span id="projectnumber">Parte 2</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Busca','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Sistema.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Sistema_8h.html">Vá para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SISTEMA_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define SISTEMA_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Usuario_8h.html">Usuario.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Servidor_8h.html">Servidor.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Canal_8h.html">Canal.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classSistema.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="classSistema.html">Sistema</a></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classSistema.html#ab0bbb8a956cf627ea48c2a6cc3503526">   25</a></span>&#160;    vector&lt;shared_ptr&lt;Usuario&gt;&gt; <a class="code" href="classSistema.html#ab0bbb8a956cf627ea48c2a6cc3503526">usuarios</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classSistema.html#a7c623c32719176b5bc1197d0162f4366">   27</a></span>&#160;    vector&lt;shared_ptr&lt;Servidor&gt;&gt; <a class="code" href="classSistema.html#a7c623c32719176b5bc1197d0162f4366">servidores</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classSistema.html#a2389e2108a6d182cb87114493b2e457f">   29</a></span>&#160;    shared_ptr&lt;Usuario&gt; <a class="code" href="classSistema.html#a2389e2108a6d182cb87114493b2e457f">usuarioLogado</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classSistema.html#a9a983c7d404627c4dd0cbd2ca07b4ceb">   31</a></span>&#160;    shared_ptr&lt;Servidor&gt; <a class="code" href="classSistema.html#a9a983c7d404627c4dd0cbd2ca07b4ceb">servidorAtual</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classSistema.html#a8f6516e15acc87a66dcbe190642061c0">   33</a></span>&#160;    shared_ptr&lt;Canal&gt; <a class="code" href="classSistema.html#a8f6516e15acc87a66dcbe190642061c0">canalAtual</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classSistema.html#aeeb3ef87a1d1b62858f1c88153d6e733">   35</a></span>&#160;    shared_ptr&lt;bool&gt; <a class="code" href="classSistema.html#aeeb3ef87a1d1b62858f1c88153d6e733">sair</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="classSistema.html">Sistema</a>();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    ~<a class="code" href="classSistema.html">Sistema</a>();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    vector&lt;shared_ptr&lt;Usuario&gt;&gt; getUsuarios();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    shared_ptr&lt;Usuario&gt; getUsuarioPorId(<span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> adicionarUsuario(shared_ptr&lt;Usuario&gt; usuario);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    vector&lt;shared_ptr&lt;Servidor&gt;&gt; getServidores();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> adicionarServidor(shared_ptr&lt;Servidor&gt; servidor);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> removerServidor(shared_ptr&lt;Servidor&gt; servidor);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    shared_ptr&lt;Usuario&gt; getUsuarioLogado();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> setUsuarioLogado(shared_ptr&lt;Usuario&gt; usuario);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    shared_ptr&lt;Servidor&gt; getServidorAtual();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> setServidorAtual(shared_ptr&lt;Servidor&gt; servidor);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    shared_ptr&lt;Canal&gt; getCanalAtual();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span> setCanalAtual(shared_ptr&lt;Canal&gt; canal);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    shared_ptr&lt;bool&gt; getSair();</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">void</span> setSair(shared_ptr&lt;bool&gt; sair);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;};</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// SISTEMA_H</span></div>
+<div class="ttc" id="aCanal_8h_html"><div class="ttname"><a href="Canal_8h.html">Canal.h</a></div><div class="ttdoc">Cabeçalho da classe Canal.</div></div>
+<div class="ttc" id="aServidor_8h_html"><div class="ttname"><a href="Servidor_8h.html">Servidor.h</a></div><div class="ttdoc">Cabeçalho da classe Servidor.</div></div>
+<div class="ttc" id="aUsuario_8h_html"><div class="ttname"><a href="Usuario_8h.html">Usuario.h</a></div><div class="ttdoc">Cabeçalho da classe Usuario.</div></div>
+<div class="ttc" id="aclassSistema_html"><div class="ttname"><a href="classSistema.html">Sistema</a></div><div class="ttdoc">Implementação da classe Sistema.</div><div class="ttdef"><b>Definition:</b> Sistema.h:22</div></div>
+<div class="ttc" id="aclassSistema_html_a2389e2108a6d182cb87114493b2e457f"><div class="ttname"><a href="classSistema.html#a2389e2108a6d182cb87114493b2e457f">Sistema::usuarioLogado</a></div><div class="ttdeci">shared_ptr&lt; Usuario &gt; usuarioLogado</div><div class="ttdoc">Usuario Logado.</div><div class="ttdef"><b>Definition:</b> Sistema.h:29</div></div>
+<div class="ttc" id="aclassSistema_html_a7c623c32719176b5bc1197d0162f4366"><div class="ttname"><a href="classSistema.html#a7c623c32719176b5bc1197d0162f4366">Sistema::servidores</a></div><div class="ttdeci">vector&lt; shared_ptr&lt; Servidor &gt; &gt; servidores</div><div class="ttdoc">Vector de servidores.</div><div class="ttdef"><b>Definition:</b> Sistema.h:27</div></div>
+<div class="ttc" id="aclassSistema_html_a8f6516e15acc87a66dcbe190642061c0"><div class="ttname"><a href="classSistema.html#a8f6516e15acc87a66dcbe190642061c0">Sistema::canalAtual</a></div><div class="ttdeci">shared_ptr&lt; Canal &gt; canalAtual</div><div class="ttdoc">Pointer para atual canal.</div><div class="ttdef"><b>Definition:</b> Sistema.h:33</div></div>
+<div class="ttc" id="aclassSistema_html_a9a983c7d404627c4dd0cbd2ca07b4ceb"><div class="ttname"><a href="classSistema.html#a9a983c7d404627c4dd0cbd2ca07b4ceb">Sistema::servidorAtual</a></div><div class="ttdeci">shared_ptr&lt; Servidor &gt; servidorAtual</div><div class="ttdoc">Pointer para o atual servidor.</div><div class="ttdef"><b>Definition:</b> Sistema.h:31</div></div>
+<div class="ttc" id="aclassSistema_html_ab0bbb8a956cf627ea48c2a6cc3503526"><div class="ttname"><a href="classSistema.html#ab0bbb8a956cf627ea48c2a6cc3503526">Sistema::usuarios</a></div><div class="ttdeci">vector&lt; shared_ptr&lt; Usuario &gt; &gt; usuarios</div><div class="ttdoc">Vector de usuários.</div><div class="ttdef"><b>Definition:</b> Sistema.h:25</div></div>
+<div class="ttc" id="aclassSistema_html_aeeb3ef87a1d1b62858f1c88153d6e733"><div class="ttname"><a href="classSistema.html#aeeb3ef87a1d1b62858f1c88153d6e733">Sistema::sair</a></div><div class="ttdeci">shared_ptr&lt; bool &gt; sair</div><div class="ttdoc">Booleana para sair.</div><div class="ttdef"><b>Definition:</b> Sistema.h:35</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

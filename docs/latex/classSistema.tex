@@ -1,0 +1,256 @@
+\hypertarget{classSistema}{}\doxysection{Referência da Classe Sistema}
+\label{classSistema}\index{Sistema@{Sistema}}
+
+
+Implementação da classe \mbox{\hyperlink{classSistema}{Sistema}}.  
+
+
+
+
+{\ttfamily \#include \char`\"{}include/\+Sistema.\+h\char`\"{}}
+
+\doxysubsection*{Membros Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSistema_a815b07845ef6b03247b239333fe75e28}\label{classSistema_a815b07845ef6b03247b239333fe75e28}} 
+\mbox{\hyperlink{classSistema_a815b07845ef6b03247b239333fe75e28}{Sistema}} ()
+\begin{DoxyCompactList}\small\item\em Construtor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSistema_aafc86e0f2c3d734fb4c0985f70c27a1a}\label{classSistema_aafc86e0f2c3d734fb4c0985f70c27a1a}} 
+\mbox{\hyperlink{classSistema_aafc86e0f2c3d734fb4c0985f70c27a1a}{$\sim$\+Sistema}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor. \end{DoxyCompactList}\item 
+vector$<$ shared\+\_\+ptr$<$ \mbox{\hyperlink{classUsuario}{Usuario}} $>$ $>$ \mbox{\hyperlink{classSistema_afe569ee4c188654fb7af1dfc1ace3dd5}{get\+Usuarios}} ()
+\begin{DoxyCompactList}\small\item\em Faz o get de usuários. \end{DoxyCompactList}\item 
+shared\+\_\+ptr$<$ \mbox{\hyperlink{classUsuario}{Usuario}} $>$ \mbox{\hyperlink{classSistema_a660bad1f8659e5ada9d36c4652da45b2}{get\+Usuario\+Por\+Id}} (int id)
+\begin{DoxyCompactList}\small\item\em Faz o get de usuário por id. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSistema_ac7e5eda5e3a3ad01e7d612a642b49c7e}{adicionar\+Usuario}} (shared\+\_\+ptr$<$ \mbox{\hyperlink{classUsuario}{Usuario}} $>$ usuario)
+\begin{DoxyCompactList}\small\item\em Adiciona usuário. \end{DoxyCompactList}\item 
+vector$<$ shared\+\_\+ptr$<$ \mbox{\hyperlink{classServidor}{Servidor}} $>$ $>$ \mbox{\hyperlink{classSistema_a8735f4a5f8a57007d4301842993f7296}{get\+Servidores}} ()
+\begin{DoxyCompactList}\small\item\em Faz o get de servidores. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSistema_a6f588b1307ebad52efd53b8cab3bfa2b}{adicionar\+Servidor}} (shared\+\_\+ptr$<$ \mbox{\hyperlink{classServidor}{Servidor}} $>$ servidor)
+\begin{DoxyCompactList}\small\item\em Adiciona servidor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSistema_a7bdd3207920cc0a81ec4d9d98ec9a564}{remover\+Servidor}} (shared\+\_\+ptr$<$ \mbox{\hyperlink{classServidor}{Servidor}} $>$ servidor)
+\begin{DoxyCompactList}\small\item\em Remove servidor. \end{DoxyCompactList}\item 
+shared\+\_\+ptr$<$ \mbox{\hyperlink{classUsuario}{Usuario}} $>$ \mbox{\hyperlink{classSistema_af0cffe3efb12c4f4f078071ffc174cf7}{get\+Usuario\+Logado}} ()
+\begin{DoxyCompactList}\small\item\em Faz o get de usuario\+Logado. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSistema_af9e14df854f4bbd05cf6877f068bd92a}{set\+Usuario\+Logado}} (shared\+\_\+ptr$<$ \mbox{\hyperlink{classUsuario}{Usuario}} $>$ usuario)
+\begin{DoxyCompactList}\small\item\em Faz o set de usuario\+Logado. \end{DoxyCompactList}\item 
+shared\+\_\+ptr$<$ \mbox{\hyperlink{classServidor}{Servidor}} $>$ \mbox{\hyperlink{classSistema_aa6f9dc3077534f490190999b91123f6e}{get\+Servidor\+Atual}} ()
+\begin{DoxyCompactList}\small\item\em Faz o get de servidor\+Atual. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSistema_af0552f488c6f67490b4dc0bf9d4fe7e0}{set\+Servidor\+Atual}} (shared\+\_\+ptr$<$ \mbox{\hyperlink{classServidor}{Servidor}} $>$ servidor)
+\begin{DoxyCompactList}\small\item\em Faz o set de usuario\+Logado. \end{DoxyCompactList}\item 
+shared\+\_\+ptr$<$ \mbox{\hyperlink{classCanal}{Canal}} $>$ \mbox{\hyperlink{classSistema_aa4ade3ff26b1eb97393aad3f637d1a06}{get\+Canal\+Atual}} ()
+\begin{DoxyCompactList}\small\item\em Faz o get de canal\+Atual. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSistema_a572ae71a80217cadaa2b11cb67c30901}{set\+Canal\+Atual}} (shared\+\_\+ptr$<$ \mbox{\hyperlink{classCanal}{Canal}} $>$ canal)
+\begin{DoxyCompactList}\small\item\em Faz o set de canal\+Atual. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSistema_a98fb605249a3e1bd48e771d95de8ced3}\label{classSistema_a98fb605249a3e1bd48e771d95de8ced3}} 
+shared\+\_\+ptr$<$ bool $>$ \mbox{\hyperlink{classSistema_a98fb605249a3e1bd48e771d95de8ced3}{get\+Sair}} ()
+\begin{DoxyCompactList}\small\item\em Sair. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSistema_a2d546e4162824e8560f3402b5e4b6756}\label{classSistema_a2d546e4162824e8560f3402b5e4b6756}} 
+void \mbox{\hyperlink{classSistema_a2d546e4162824e8560f3402b5e4b6756}{set\+Sair}} (shared\+\_\+ptr$<$ bool $>$ \mbox{\hyperlink{classSistema_aeeb3ef87a1d1b62858f1c88153d6e733}{sair}})
+\begin{DoxyCompactList}\small\item\em Sair. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos Privados}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSistema_ab0bbb8a956cf627ea48c2a6cc3503526}\label{classSistema_ab0bbb8a956cf627ea48c2a6cc3503526}} 
+vector$<$ shared\+\_\+ptr$<$ \mbox{\hyperlink{classUsuario}{Usuario}} $>$ $>$ \mbox{\hyperlink{classSistema_ab0bbb8a956cf627ea48c2a6cc3503526}{usuarios}}
+\begin{DoxyCompactList}\small\item\em Vector de usuários. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSistema_a7c623c32719176b5bc1197d0162f4366}\label{classSistema_a7c623c32719176b5bc1197d0162f4366}} 
+vector$<$ shared\+\_\+ptr$<$ \mbox{\hyperlink{classServidor}{Servidor}} $>$ $>$ \mbox{\hyperlink{classSistema_a7c623c32719176b5bc1197d0162f4366}{servidores}}
+\begin{DoxyCompactList}\small\item\em Vector de servidores. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSistema_a2389e2108a6d182cb87114493b2e457f}\label{classSistema_a2389e2108a6d182cb87114493b2e457f}} 
+shared\+\_\+ptr$<$ \mbox{\hyperlink{classUsuario}{Usuario}} $>$ \mbox{\hyperlink{classSistema_a2389e2108a6d182cb87114493b2e457f}{usuario\+Logado}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classUsuario}{Usuario}} Logado. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSistema_a9a983c7d404627c4dd0cbd2ca07b4ceb}\label{classSistema_a9a983c7d404627c4dd0cbd2ca07b4ceb}} 
+shared\+\_\+ptr$<$ \mbox{\hyperlink{classServidor}{Servidor}} $>$ \mbox{\hyperlink{classSistema_a9a983c7d404627c4dd0cbd2ca07b4ceb}{servidor\+Atual}}
+\begin{DoxyCompactList}\small\item\em Pointer para o atual servidor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSistema_a8f6516e15acc87a66dcbe190642061c0}\label{classSistema_a8f6516e15acc87a66dcbe190642061c0}} 
+shared\+\_\+ptr$<$ \mbox{\hyperlink{classCanal}{Canal}} $>$ \mbox{\hyperlink{classSistema_a8f6516e15acc87a66dcbe190642061c0}{canal\+Atual}}
+\begin{DoxyCompactList}\small\item\em Pointer para atual canal. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSistema_aeeb3ef87a1d1b62858f1c88153d6e733}\label{classSistema_aeeb3ef87a1d1b62858f1c88153d6e733}} 
+shared\+\_\+ptr$<$ bool $>$ \mbox{\hyperlink{classSistema_aeeb3ef87a1d1b62858f1c88153d6e733}{sair}}
+\begin{DoxyCompactList}\small\item\em Booleana para sair. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Implementação da classe \mbox{\hyperlink{classSistema}{Sistema}}. 
+
+\doxysubsection{Funções membros}
+\mbox{\Hypertarget{classSistema_a6f588b1307ebad52efd53b8cab3bfa2b}\label{classSistema_a6f588b1307ebad52efd53b8cab3bfa2b}} 
+\index{Sistema@{Sistema}!adicionarServidor@{adicionarServidor}}
+\index{adicionarServidor@{adicionarServidor}!Sistema@{Sistema}}
+\doxysubsubsection{\texorpdfstring{adicionarServidor()}{adicionarServidor()}}
+{\footnotesize\ttfamily void Sistema\+::adicionar\+Servidor (\begin{DoxyParamCaption}\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{classServidor}{Servidor}} $>$}]{servidor }\end{DoxyParamCaption})}
+
+
+
+Adiciona servidor. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em servidor} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSistema_ac7e5eda5e3a3ad01e7d612a642b49c7e}\label{classSistema_ac7e5eda5e3a3ad01e7d612a642b49c7e}} 
+\index{Sistema@{Sistema}!adicionarUsuario@{adicionarUsuario}}
+\index{adicionarUsuario@{adicionarUsuario}!Sistema@{Sistema}}
+\doxysubsubsection{\texorpdfstring{adicionarUsuario()}{adicionarUsuario()}}
+{\footnotesize\ttfamily void Sistema\+::adicionar\+Usuario (\begin{DoxyParamCaption}\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{classUsuario}{Usuario}} $>$}]{usuario }\end{DoxyParamCaption})}
+
+
+
+Adiciona usuário. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em usuario} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSistema_aa4ade3ff26b1eb97393aad3f637d1a06}\label{classSistema_aa4ade3ff26b1eb97393aad3f637d1a06}} 
+\index{Sistema@{Sistema}!getCanalAtual@{getCanalAtual}}
+\index{getCanalAtual@{getCanalAtual}!Sistema@{Sistema}}
+\doxysubsubsection{\texorpdfstring{getCanalAtual()}{getCanalAtual()}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$ \mbox{\hyperlink{classCanal}{Canal}} $>$ Sistema\+::get\+Canal\+Atual (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Faz o get de canal\+Atual. 
+
+\begin{DoxyReturn}{Retorna}
+canal\+Atual 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSistema_aa6f9dc3077534f490190999b91123f6e}\label{classSistema_aa6f9dc3077534f490190999b91123f6e}} 
+\index{Sistema@{Sistema}!getServidorAtual@{getServidorAtual}}
+\index{getServidorAtual@{getServidorAtual}!Sistema@{Sistema}}
+\doxysubsubsection{\texorpdfstring{getServidorAtual()}{getServidorAtual()}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$ \mbox{\hyperlink{classServidor}{Servidor}} $>$ Sistema\+::get\+Servidor\+Atual (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Faz o get de servidor\+Atual. 
+
+\begin{DoxyReturn}{Retorna}
+servidor\+Atual 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSistema_a8735f4a5f8a57007d4301842993f7296}\label{classSistema_a8735f4a5f8a57007d4301842993f7296}} 
+\index{Sistema@{Sistema}!getServidores@{getServidores}}
+\index{getServidores@{getServidores}!Sistema@{Sistema}}
+\doxysubsubsection{\texorpdfstring{getServidores()}{getServidores()}}
+{\footnotesize\ttfamily vector$<$ shared\+\_\+ptr$<$ \mbox{\hyperlink{classServidor}{Servidor}} $>$ $>$ Sistema\+::get\+Servidores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Faz o get de servidores. 
+
+\begin{DoxyReturn}{Retorna}
+servidores 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSistema_af0cffe3efb12c4f4f078071ffc174cf7}\label{classSistema_af0cffe3efb12c4f4f078071ffc174cf7}} 
+\index{Sistema@{Sistema}!getUsuarioLogado@{getUsuarioLogado}}
+\index{getUsuarioLogado@{getUsuarioLogado}!Sistema@{Sistema}}
+\doxysubsubsection{\texorpdfstring{getUsuarioLogado()}{getUsuarioLogado()}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$ \mbox{\hyperlink{classUsuario}{Usuario}} $>$ Sistema\+::get\+Usuario\+Logado (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Faz o get de usuario\+Logado. 
+
+\begin{DoxyReturn}{Retorna}
+usuario\+Logado 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSistema_a660bad1f8659e5ada9d36c4652da45b2}\label{classSistema_a660bad1f8659e5ada9d36c4652da45b2}} 
+\index{Sistema@{Sistema}!getUsuarioPorId@{getUsuarioPorId}}
+\index{getUsuarioPorId@{getUsuarioPorId}!Sistema@{Sistema}}
+\doxysubsubsection{\texorpdfstring{getUsuarioPorId()}{getUsuarioPorId()}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$ \mbox{\hyperlink{classUsuario}{Usuario}} $>$ Sistema\+::get\+Usuario\+Por\+Id (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Faz o get de usuário por id. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+usuario selecionado 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSistema_afe569ee4c188654fb7af1dfc1ace3dd5}\label{classSistema_afe569ee4c188654fb7af1dfc1ace3dd5}} 
+\index{Sistema@{Sistema}!getUsuarios@{getUsuarios}}
+\index{getUsuarios@{getUsuarios}!Sistema@{Sistema}}
+\doxysubsubsection{\texorpdfstring{getUsuarios()}{getUsuarios()}}
+{\footnotesize\ttfamily vector$<$ shared\+\_\+ptr$<$ \mbox{\hyperlink{classUsuario}{Usuario}} $>$ $>$ Sistema\+::get\+Usuarios (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Faz o get de usuários. 
+
+\begin{DoxyReturn}{Retorna}
+usuarios 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSistema_a7bdd3207920cc0a81ec4d9d98ec9a564}\label{classSistema_a7bdd3207920cc0a81ec4d9d98ec9a564}} 
+\index{Sistema@{Sistema}!removerServidor@{removerServidor}}
+\index{removerServidor@{removerServidor}!Sistema@{Sistema}}
+\doxysubsubsection{\texorpdfstring{removerServidor()}{removerServidor()}}
+{\footnotesize\ttfamily void Sistema\+::remover\+Servidor (\begin{DoxyParamCaption}\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{classServidor}{Servidor}} $>$}]{servidor }\end{DoxyParamCaption})}
+
+
+
+Remove servidor. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em servidor} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSistema_a572ae71a80217cadaa2b11cb67c30901}\label{classSistema_a572ae71a80217cadaa2b11cb67c30901}} 
+\index{Sistema@{Sistema}!setCanalAtual@{setCanalAtual}}
+\index{setCanalAtual@{setCanalAtual}!Sistema@{Sistema}}
+\doxysubsubsection{\texorpdfstring{setCanalAtual()}{setCanalAtual()}}
+{\footnotesize\ttfamily void Sistema\+::set\+Canal\+Atual (\begin{DoxyParamCaption}\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{classCanal}{Canal}} $>$}]{canal }\end{DoxyParamCaption})}
+
+
+
+Faz o set de canal\+Atual. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em canal} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSistema_af0552f488c6f67490b4dc0bf9d4fe7e0}\label{classSistema_af0552f488c6f67490b4dc0bf9d4fe7e0}} 
+\index{Sistema@{Sistema}!setServidorAtual@{setServidorAtual}}
+\index{setServidorAtual@{setServidorAtual}!Sistema@{Sistema}}
+\doxysubsubsection{\texorpdfstring{setServidorAtual()}{setServidorAtual()}}
+{\footnotesize\ttfamily void Sistema\+::set\+Servidor\+Atual (\begin{DoxyParamCaption}\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{classServidor}{Servidor}} $>$}]{servidor }\end{DoxyParamCaption})}
+
+
+
+Faz o set de usuario\+Logado. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em servidor} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSistema_af9e14df854f4bbd05cf6877f068bd92a}\label{classSistema_af9e14df854f4bbd05cf6877f068bd92a}} 
+\index{Sistema@{Sistema}!setUsuarioLogado@{setUsuarioLogado}}
+\index{setUsuarioLogado@{setUsuarioLogado}!Sistema@{Sistema}}
+\doxysubsubsection{\texorpdfstring{setUsuarioLogado()}{setUsuarioLogado()}}
+{\footnotesize\ttfamily void Sistema\+::set\+Usuario\+Logado (\begin{DoxyParamCaption}\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{classUsuario}{Usuario}} $>$}]{usuario }\end{DoxyParamCaption})}
+
+
+
+Faz o set de usuario\+Logado. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em usuario} & \\
+\hline
+\end{DoxyParams}
+
+
+A documentação para essa classe foi gerada a partir dos seguintes arquivos\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{Sistema_8h}{Sistema.\+h}}\item 
+src/Sistema.\+cpp\end{DoxyCompactItemize}

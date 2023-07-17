@@ -1,0 +1,92 @@
+\char`\"{}\+Concordo\char`\"{} é um projeto da disciplina de Linguagem de Programação 1. A ideia é fazer um programa em terminal semelhante ao Discord.\hypertarget{md_README_autotoc_md1}{}\doxysection{Aluno}\label{md_README_autotoc_md1}
+Adriano Nóbrega Azevedo Filho, matrícula 20210047296.\hypertarget{md_README_autotoc_md2}{}\doxysection{Como rodar o projeto}\label{md_README_autotoc_md2}
+Para rodar o Concordo, siga os seguintes passos\+:
+
+
+\begin{DoxyEnumerate}
+\item Execute o CMake\+:
+\end{DoxyEnumerate}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{cmake .}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyEnumerate}
+\item Compile o código\+:
+\end{DoxyEnumerate}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{make}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyEnumerate}
+\item Execute o programa\+:
+\end{DoxyEnumerate}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{./concordo}
+
+\end{DoxyCode}
+
+
+Para rodar o projeto utilizando o script de teste (usa todas as funcionalidades), utilize\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{./concordo < ../script.txt}
+
+\end{DoxyCode}
+ \hypertarget{md_README_autotoc_md3}{}\doxysection{Funcionalidades}\label{md_README_autotoc_md3}
+Concordo, atualmente, conta com todas as funcionalidades da Parte I e II\+:
+
+{\bfseries{A1 -\/ Se não estiver logado (Assim que entra no sistema)}}
+
+
+\begin{DoxyItemize}
+\item A1.\+1 -\/ Sair do sistema\+: {\ttfamily quit}
+\item A1.\+2 -\/ Criar usuário\+: {\ttfamily create-\/user $<$email$>$ $<$senha\+\_\+sem\+\_\+espaços$>$ $<$nome com espaços$>$}
+\item A1.\+3 -\/ Entrar no sistema\+: {\ttfamily login $<$email$>$ $<$senha$>$}
+\end{DoxyItemize}
+
+{\bfseries{A2 -\/ Interações básicas com Servidores (Se estiver logado)}}
+
+
+\begin{DoxyItemize}
+\item A2.\+1 -\/ Desconectar do Concordo\+: {\ttfamily disconnect}
+\item A2.\+2 -\/ Criar servidores\+: {\ttfamily create-\/server $<$nome$>$}
+\item A2.\+3 -\/ Mudar a descrição do servidor\+: {\ttfamily set-\/server-\/desc $<$nome$>$ \char`\"{}$<$descrição$>$\char`\"{}}
+\item A2.\+4 -\/ Setar código de convite para o servidor\+: {\ttfamily set-\/server-\/invitecode $<$nome$>$ $<$codigo$>$}
+\item A2.\+5 -\/ Listar servidores\+: {\ttfamily list-\/servers}
+\item A2.\+6 -\/ Remover servidor\+: {\ttfamily remove-\/server $<$nome$>$}
+\item A2.\+7 -\/ Entrar em um servidor\+: {\ttfamily enter-\/server $<$nome$>$}
+\item A2.\+8 -\/ Sair de um servidor\+: {\ttfamily leave-\/server}
+\item A2.\+9 -\/ Listar pessoas no servidor\+: {\ttfamily list-\/participants}
+\end{DoxyItemize}
+
+{\bfseries{B1 -\/ Gestão de canais (se tiver entrado no servidor)}}
+\begin{DoxyItemize}
+\item B1.\+1 -\/ Listar canais do servidor\+: {\ttfamily list-\/channels}
+\item B1.\+2 -\/ Criar um canal no servidor\+: {\ttfamily create-\/channel $<$nome$>$ $<$tipo$>$}
+\item B1.\+3 -\/ Entrar em um canal do servidor\+: {\ttfamily enter-\/channel $<$nome$>$}
+\item B1.\+4 -\/ Sair do canal \+: {\ttfamily leave-\/channel}
+\end{DoxyItemize}
+
+{\bfseries{B2 -\/ Gestão de mensagens}}
+
+
+\begin{DoxyItemize}
+\item B2.\+1 -\/ Enviar mensagem para o canal \+: {\ttfamily send-\/message $<$mensagem$>$}
+\item B2.\+2 -\/ Visualizar mensagens do canal \+: {\ttfamily comando list-\/messages}
+\end{DoxyItemize}\hypertarget{md_README_autotoc_md4}{}\doxysection{Dificuldades}\label{md_README_autotoc_md4}
+Procrastinação e problemas pessoais.
+
+Nível elevado do trabalho. 

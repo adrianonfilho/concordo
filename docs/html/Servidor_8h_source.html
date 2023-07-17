@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Concordo: Código-Fonte de include/Servidor.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Concordo
+   &#160;<span id="projectnumber">Parte 2</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Busca','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Servidor.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Servidor_8h.html">Vá para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SERVIDOR_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define SERVIDOR_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="CanalTexto_8h.html">CanalTexto.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="CanalVoz_8h.html">CanalVoz.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Canal_8h.html">Canal.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classServidor.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="classServidor.html">Servidor</a></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classServidor.html#a52c21983ad654fb7994dead4ae433e2c">   24</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classServidor.html#a52c21983ad654fb7994dead4ae433e2c">usuarioDonoId</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classServidor.html#afe5b8d9c020be2cdea189f3aa5958b2d">   26</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="classServidor.html#afe5b8d9c020be2cdea189f3aa5958b2d">nome</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classServidor.html#ac835192fb099563bd7248b2594be796d">   28</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="classServidor.html#ac835192fb099563bd7248b2594be796d">descricao</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classServidor.html#a5c219913b2b69704055535477cb5bb9a">   30</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="classServidor.html#a5c219913b2b69704055535477cb5bb9a">codigoConvite</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classServidor.html#a934082d3bbb827d8294a06ba5d87c30b">   32</a></span>&#160;    vector&lt;shared_ptr&lt;CanalTexto&gt;&gt; <a class="code" href="classServidor.html#a934082d3bbb827d8294a06ba5d87c30b">canaisTexto</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classServidor.html#ace925601f19875d3c040537d651a3318">   34</a></span>&#160;    vector&lt;shared_ptr&lt;CanalVoz&gt;&gt; <a class="code" href="classServidor.html#ace925601f19875d3c040537d651a3318">canaisVoz</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classServidor.html#a94e53c9774bcf7d8dc592c054dd4b338">   36</a></span>&#160;    vector&lt;int&gt; <a class="code" href="classServidor.html#a94e53c9774bcf7d8dc592c054dd4b338">participantesIds</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="classServidor.html">Servidor</a>(<span class="keywordtype">int</span> usuarioDonoId, <span class="keywordtype">string</span> nome);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">int</span> getUsuarioDonoId();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> setUsuarioDonoId(<span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">string</span> getNome();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">void</span> setNome(<span class="keywordtype">string</span> nome);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">string</span> getDescricao();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> setDescricao(<span class="keywordtype">string</span> descricao);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">string</span> getCodigoConvite();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> setCodigoConvite(<span class="keywordtype">string</span> codigoConvite);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    vector&lt;shared_ptr&lt;CanalTexto&gt;&gt; getCanaisTexto();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> adicionarCanalTexto(shared_ptr&lt;CanalTexto&gt; canalTexto);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    vector&lt;shared_ptr&lt;CanalVoz&gt;&gt; getCanaisVoz();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> adicionarCanalVoz(shared_ptr&lt;CanalVoz&gt; canalVoz);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    vector&lt;int&gt; getParticipantesIds();</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> adicionarParticipanteId(<span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;};</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// SERVIDOR_H</span></div>
+<div class="ttc" id="aCanalTexto_8h_html"><div class="ttname"><a href="CanalTexto_8h.html">CanalTexto.h</a></div><div class="ttdoc">Cabeçalho da classe CanalTexto.</div></div>
+<div class="ttc" id="aCanalVoz_8h_html"><div class="ttname"><a href="CanalVoz_8h.html">CanalVoz.h</a></div><div class="ttdoc">Cabeçalho da classe CanalVoz.</div></div>
+<div class="ttc" id="aCanal_8h_html"><div class="ttname"><a href="Canal_8h.html">Canal.h</a></div><div class="ttdoc">Cabeçalho da classe Canal.</div></div>
+<div class="ttc" id="aclassServidor_html"><div class="ttname"><a href="classServidor.html">Servidor</a></div><div class="ttdoc">Implementação da classe Servidor.</div><div class="ttdef"><b>Definition:</b> Servidor.h:21</div></div>
+<div class="ttc" id="aclassServidor_html_a52c21983ad654fb7994dead4ae433e2c"><div class="ttname"><a href="classServidor.html#a52c21983ad654fb7994dead4ae433e2c">Servidor::usuarioDonoId</a></div><div class="ttdeci">int usuarioDonoId</div><div class="ttdoc">int para id do usuário dono do servidor</div><div class="ttdef"><b>Definition:</b> Servidor.h:24</div></div>
+<div class="ttc" id="aclassServidor_html_a5c219913b2b69704055535477cb5bb9a"><div class="ttname"><a href="classServidor.html#a5c219913b2b69704055535477cb5bb9a">Servidor::codigoConvite</a></div><div class="ttdeci">string codigoConvite</div><div class="ttdoc">string com código de convite para server</div><div class="ttdef"><b>Definition:</b> Servidor.h:30</div></div>
+<div class="ttc" id="aclassServidor_html_a934082d3bbb827d8294a06ba5d87c30b"><div class="ttname"><a href="classServidor.html#a934082d3bbb827d8294a06ba5d87c30b">Servidor::canaisTexto</a></div><div class="ttdeci">vector&lt; shared_ptr&lt; CanalTexto &gt; &gt; canaisTexto</div><div class="ttdoc">vector de canais com os canais do de texto do servidor</div><div class="ttdef"><b>Definition:</b> Servidor.h:32</div></div>
+<div class="ttc" id="aclassServidor_html_a94e53c9774bcf7d8dc592c054dd4b338"><div class="ttname"><a href="classServidor.html#a94e53c9774bcf7d8dc592c054dd4b338">Servidor::participantesIds</a></div><div class="ttdeci">vector&lt; int &gt; participantesIds</div><div class="ttdoc">vector de int com os IDs dos participantes do servidor</div><div class="ttdef"><b>Definition:</b> Servidor.h:36</div></div>
+<div class="ttc" id="aclassServidor_html_ac835192fb099563bd7248b2594be796d"><div class="ttname"><a href="classServidor.html#ac835192fb099563bd7248b2594be796d">Servidor::descricao</a></div><div class="ttdeci">string descricao</div><div class="ttdoc">string descricao para descrever servidor</div><div class="ttdef"><b>Definition:</b> Servidor.h:28</div></div>
+<div class="ttc" id="aclassServidor_html_ace925601f19875d3c040537d651a3318"><div class="ttname"><a href="classServidor.html#ace925601f19875d3c040537d651a3318">Servidor::canaisVoz</a></div><div class="ttdeci">vector&lt; shared_ptr&lt; CanalVoz &gt; &gt; canaisVoz</div><div class="ttdoc">vector de canais com os canais do de texto do servidor</div><div class="ttdef"><b>Definition:</b> Servidor.h:34</div></div>
+<div class="ttc" id="aclassServidor_html_afe5b8d9c020be2cdea189f3aa5958b2d"><div class="ttname"><a href="classServidor.html#afe5b8d9c020be2cdea189f3aa5958b2d">Servidor::nome</a></div><div class="ttdeci">string nome</div><div class="ttdoc">string nome para nomear servidor</div><div class="ttdef"><b>Definition:</b> Servidor.h:26</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>
